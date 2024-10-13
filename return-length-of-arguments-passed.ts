@@ -1,6 +1,6 @@
-type JSONValue = null | boolean | number | string | JSONValue[] | { [key: string]: JSONValue };
+type JSONValueArgs = null | boolean | number | string | JSONValueArgs[] | { [key: string]: JSONValueArgs };
 
-function argumentsLength(...args: JSONValue[]): number {
+function argumentsLength(...args: JSONValueArgs[]): number {
     return args.length
 };
 
